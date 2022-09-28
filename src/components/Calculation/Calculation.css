@@ -1,0 +1,86 @@
+.align{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.pic-and-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pic-and-name img{
+    width: 35px;
+    border-radius: 30px;
+}
+.name{
+    font-size: 10px;
+    font-weight: 300;
+}
+.name span:nth-child(1){
+    font-weight: 600;
+    font-size: 12px;
+}
+.add-break{
+    padding: 20px;
+}
+.add-break p{
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+.anchor a{
+    font-weight: 500;
+    font-size: 0.7rem;
+    text-decoration: none;
+    background-color: azure;
+    border-radius: 100%;
+    padding: 7px;
+}
+.anchor a:hover{
+    background-color: rgb(0, 165, 165);
+    color: white;
+}
+.anchor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 13px 1px;
+    background-color: rgb(213, 233, 255);
+    border-radius: 5px;
+
+}
+.details-calc{
+    padding: 20px ;
+}
+.details-calc p:nth-child(1){
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.ex-details{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(213, 233, 255);
+    padding: 15px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.seconds{
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.cmplt-btn{
+    width: 200px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(0, 165, 165);
+    border: none;
+    position: relative;
+    left: 55px;
+    border-radius: 10px;
+}
+.cmplt-btn:hover{
+    background-color: rgb(0, 105, 105);
+}

@@ -1,0 +1,35 @@
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.exercises{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+
+}
+
+.whole-exercises{
+    margin: 2rem auto;
+}
+.select{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: rgb(57, 61, 61);
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+}
+.calculation{
+    width: 20rem;
+    margin: 0px auto;
+    margin-top: 3.4rem;
+    background-color: #e2f3fa;
+    border-radius: 10px;
+}
