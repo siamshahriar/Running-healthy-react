@@ -1,0 +1,11 @@
+.QA{
+    width: 80vw;
+    margin: 0 auto;
+    background-color: rgb(227, 253, 244);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.QA:nth-child(1){
+    margin-top: 6rem;
+}
