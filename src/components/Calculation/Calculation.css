@@ -10,27 +10,27 @@
     margin-top: 20px;
 }
 .pic-and-name img{
-    width: 35px;
+    width: 45px;
     border-radius: 30px;
 }
 .name{
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 300;
 }
 .name span:nth-child(1){
     font-weight: 600;
-    font-size: 12px;
+    font-size: 15px;
 }
 .add-break{
     padding: 20px;
 }
 .add-break p{
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 1rem;
 }
 .anchor a{
     font-weight: 500;
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-decoration: none;
     background-color: azure;
     border-radius: 100%;
@@ -54,7 +54,7 @@
 }
 .details-calc p:nth-child(1){
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 .ex-details{
     display: flex;
@@ -64,11 +64,11 @@
     margin-bottom: 1rem;
     border-radius: 5px;
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .seconds{
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .cmplt-btn{
@@ -80,6 +80,7 @@
     position: relative;
     left: 55px;
     border-radius: 10px;
+    font-size: 1.1rem;
 }
 .cmplt-btn:hover{
     background-color: rgb(0, 105, 105);

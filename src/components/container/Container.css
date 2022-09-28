@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
 }
 
 .exercises {
@@ -15,7 +15,7 @@
 .select {
   padding-left: 1rem;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgb(57, 61, 61);
 }
 .icon {

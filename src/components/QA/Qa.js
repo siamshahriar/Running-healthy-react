@@ -5,7 +5,7 @@ const Qa = () => {
   return (
     <div>
       <div className="QA">
-        <p>Q1. How does react work?</p>
+        <p className="question">Q1. How does react work?</p>
         <p>
           Ans. While building client-side apps, a team of Facebook developers
           realized that the DOM is slow (The Document Object Model (DOM) is an
@@ -25,7 +25,7 @@ const Qa = () => {
         </p>
       </div>
       <div className="QA">
-        <p>Q2. What is the difference between props and state?</p>
+        <p className="question">Q2. What is the difference between props and state?</p>
         <p>
           Ans. Props are used to pass data from one component to another. The
           state is a local data storage that is local to the component only and
@@ -34,7 +34,7 @@ const Qa = () => {
         </p>
       </div>
       <div className="QA">
-        <p>
+        <p className="question">
           Q3. What are the uses of useState in React besides loading Data from
           API?
         </p>
