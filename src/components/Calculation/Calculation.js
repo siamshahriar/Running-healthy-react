@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -72,7 +72,9 @@ const Calculation = (props) => {
           <span className="seconds">{values} seconds</span>
         </div>
       </div>
-      <button className="cmplt-btn" onClick={notify}>Activity Completed</button>
+      <button className="cmplt-btn" onClick={notify}>
+        Activity Completed
+      </button>
       <ToastContainer />
     </div>
   );
