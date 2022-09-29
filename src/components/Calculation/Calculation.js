@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import "./Calculation.css";
@@ -8,8 +10,6 @@ const Calculation = (props) => {
   const { time } = props;
 
   const [values, setValues] = useState(localStorage.getItem("seconds") || 0);
-
-
 
   let total = 0;
   for (const gym of time) {
@@ -26,11 +26,11 @@ const Calculation = (props) => {
 
   const handleAddToSeconds = (time) => {
     localStorage.setItem("seconds", time);
-    let digits = (localStorage.getItem("seconds"));
+    let digits = localStorage.getItem("seconds");
     setValues(digits);
   };
 
-  
+  const notify = () => toast("Congratulations ! Activity Completed !!");
 
   return (
     <div className="">
@@ -59,7 +59,6 @@ const Calculation = (props) => {
               setValues={setValues}
             ></Seconds>
           ))}
-          
         </div>
       </div>
       <div className="details-calc">
@@ -73,7 +72,8 @@ const Calculation = (props) => {
           <span className="seconds">{values} seconds</span>
         </div>
       </div>
-      <button className="cmplt-btn">Activity Completed</button>
+      <button className="cmplt-btn" onClick={notify}>Activity Completed</button>
+      <ToastContainer />
     </div>
   );
 };
