@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import "./Calculation.css";
+import Seconds from "../seconds/Seconds";
 
 const Calculation = (props) => {
   const {time} = props;
@@ -11,6 +12,9 @@ const Calculation = (props) => {
       total = total + gym.time
   }
 
+  // const seconds = [{id:1 , second = 10}];
+  // const seconds = [10,20,30,40,50];
+  const seconds = [{id: 1, values:10},{id: 2, values:20},{id: 3, values:30},{id: 4, values:40},{id: 5, values:50}];
   
   return (
     <div className="">
@@ -30,11 +34,13 @@ const Calculation = (props) => {
     <div className="add-break">
         <p>Add A Break</p>
         <div className="anchor">
-            <a href="#">10s</a>
-            <a href="#">20s</a>
+          {
+            seconds.map(second => <Seconds key={second.id} time={second.values}></Seconds>)
+          }
+            {/* <a href="#">20s</a>
             <a href="#">30s</a>
             <a href="#">40s</a>
-            <a href="#">50s</a>
+            <a href="#">50s</a> */}
         </div>
     </div>
     <div className="details-calc">
