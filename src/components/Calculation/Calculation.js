@@ -3,7 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import "./Calculation.css";
 
-const Calculation = () => {
+const Calculation = (props) => {
+  const {time} = props;
+
+  let total = 0;
+  for (const gym of time){
+      total = total + gym.time
+  }
+
+  
   return (
     <div className="">
       <div className="pic-and-name align">
@@ -33,7 +41,7 @@ const Calculation = () => {
         <p>Exercise Details</p>
         <div className="ex-details">
             <span>Exercise time</span>
-            <span className="seconds">200 seconds</span>
+            <span className="seconds">{total} seconds</span>
         </div>
         <div className="ex-details">
             <span>Break Time</span>

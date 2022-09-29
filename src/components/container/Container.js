@@ -9,11 +9,19 @@ import Calculation from "../Calculation/Calculation";
 const Container = () => {
   const [exercises, setExercise] = useState([]);
 
+  const [time, setTime] = useState([]);
+
   useEffect(() => {
     fetch("fakedb.json")
       .then((res) => res.json())
       .then((data) => setExercise(data));
   }, []);
+
+  const handleAddToCalc = (card) => {
+    // console.log(card);
+    const newTime = [...time, card];
+    setTime(newTime);
+  };
   return (
     <div className="container">
       <div className="whole-exercises">
@@ -24,12 +32,12 @@ const Container = () => {
         <p className="select">Select today exercise</p>
         <div className="exercises">
           {exercises.map((card) => (
-            <Card key={card.id} card={card}></Card>
+            <Card key={card.id} card={card} handleAddToCalc={handleAddToCalc}></Card>
           ))}
         </div>
       </div>
       <div className="calculation">
-        <Calculation></Calculation>
+        <Calculation time={time}></Calculation>
       </div>
     </div>
   );
