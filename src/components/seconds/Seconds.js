@@ -1,11 +1,14 @@
 import React from 'react';
 import "./Seconds.css";
 
+// const getValue = () => {
+//     let 
+//     return digits;
+// }
+
 const Seconds = (props) => {
-    const {time} = props;
-    const handleAddToSeconds = (time) => {
-        console.log(time);
-      };
+    const {time, handleAddToSeconds} = props;
+    
 
     return (
         <div className='seconds'>
@@ -14,4 +17,4 @@ const Seconds = (props) => {
     );
 };
 
-export default Seconds;
+export {Seconds};
