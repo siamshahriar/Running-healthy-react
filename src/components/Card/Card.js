@@ -12,7 +12,7 @@ const Card = (props) => {
         For Age: <span>13-40</span>{" "}
       </p>
       <p>
-        Time required : <span>{time}</span>s
+        Time required : <span className="time-color">{time}</span> seconds
       </p>
       <button onClick={() => handleAddToCalc(props.card)}>Add to List</button>
     </div>

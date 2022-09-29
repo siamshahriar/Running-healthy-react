@@ -9,3 +9,6 @@
 .QA:nth-child(1){
     margin-top: 6rem;
 }
+.QA:nth-child(3){
+    margin-bottom: 6rem;
+}

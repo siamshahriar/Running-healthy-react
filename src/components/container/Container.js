@@ -29,7 +29,7 @@ const Container = () => {
           <FontAwesomeIcon icon={faPersonRunning} />
           <p>Exercise Daily, Stay Healthy !</p>
         </div>
-        <p className="select">Select today exercise</p>
+        <p className="select">Select todays exercise</p>
         <div className="exercises">
           {exercises.map((card) => (
             <Card key={card.id} card={card} handleAddToCalc={handleAddToCalc}></Card>
