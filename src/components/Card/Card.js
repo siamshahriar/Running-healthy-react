@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.css";
 
 const Card = (props) => {
-  const { name, img, time, id } = props.card;
+  const { name, img, time} = props.card;
     const {handleAddToCalc} = props
   return (
     <div className="card">

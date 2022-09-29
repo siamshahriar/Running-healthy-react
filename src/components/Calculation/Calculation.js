@@ -56,7 +56,6 @@ const Calculation = (props) => {
               key={second.id}
               handleAddToSeconds={handleAddToSeconds}
               time={second.values}
-              setValues={setValues}
             ></Seconds>
           ))}
         </div>
