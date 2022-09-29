@@ -47,3 +47,21 @@
 .time-color{
     color: rgb(0, 96, 185);
 }
+
+@media only screen 
+and (min-device-width : 220px) 
+and (max-device-width : 480px) {
+    .card img{
+        width: 100%;
+    }
+}
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 800px){
+    .card{
+        width: 200px;
+    }
+    .card  img{
+        width: 100%;
+    }
+}

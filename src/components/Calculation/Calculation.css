@@ -85,3 +85,13 @@
 .cmplt-btn:hover{
     background-color: rgb(0, 105, 105);
 }
+
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 800px) {
+    .cmplt-btn{
+        left: 15px;
+        width: auto;
+    }
+    
+}

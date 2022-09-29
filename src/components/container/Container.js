@@ -21,6 +21,7 @@ const Container = () => {
     // console.log(card);
     const newTime = [...time, card];
     setTime(newTime);
+    console.log(time);
   };
   return (
     <div className="container">
@@ -31,7 +32,9 @@ const Container = () => {
         </div>
         <p className="select">Select todays exercise</p>
         <div className="exercises">
+
           {exercises.map((card) => (
+
             <Card key={card.id} card={card} handleAddToCalc={handleAddToCalc}></Card>
           ))}
         </div>
