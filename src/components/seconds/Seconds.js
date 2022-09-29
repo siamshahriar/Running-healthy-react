@@ -5,9 +5,12 @@ const Seconds = (props) => {
 
   return (
     <div className="seconds">
-      <a href="#" onClick={() => handleAddToSeconds(time)}>
+      {/* <a href="#" onClick={() => handleAddToSeconds(time)}>
         {time}
-      </a>
+      </a> */}
+      <button onClick={() => handleAddToSeconds(time)}>
+        {time}
+      </button>
     </div>
   );
 };
